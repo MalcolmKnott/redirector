@@ -11,7 +11,7 @@ Begin by pulling in the package through Composer.
 composer require malcolmknott/redirector
 ```
 
-Next, if using Laravel 5, include the service provider within your `config/app.php` file.
+If using Laravel 5, include the service provider within your `config/app.php` file.
 
 ```php
 'providers' => [
