@@ -52,7 +52,7 @@ class RedirectController extends Controller
             ]);
 
         return redirect()
-            ->action('\MalcolmKnott\Redirector\RedirectController@index')
+            ->action('\Malcolmknott\Redirector\RedirectController@index')
             ->with('success', 'New redirect has been created');
     }
 
@@ -99,7 +99,7 @@ class RedirectController extends Controller
             ]);
 
         return redirect()
-            ->action('\MalcolmKnott\Redirector\RedirectController@index')
+            ->action('\Malcolmknott\Redirector\RedirectController@index')
             ->with('success', 'New redirect has been updated');
     }
 
@@ -114,7 +114,7 @@ class RedirectController extends Controller
         $redirect->delete();
 
         return redirect()
-            ->action('\MalcolmKnott\Redirector\RedirectController@index')
+            ->action('\Malcolmknott\Redirector\RedirectController@index')
             ->with('success', 'New redirect has been deleted');
     }
 }
