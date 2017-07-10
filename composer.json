@@ -1,0 +1,17 @@
+{
+    "name": "malcolmknott/redirector",
+    "description": "301 Redirects",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Malcolm Knott",
+            "email": "malcolm.knott@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Malcolmknott\\Redirector\\": "src"
+        }
+    },
+    "require": {}
+}
