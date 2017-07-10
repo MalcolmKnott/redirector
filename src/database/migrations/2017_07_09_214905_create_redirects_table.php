@@ -17,7 +17,7 @@ class CreateRedirectsTable extends Migration
             $table->increments('id');
             $table->text('old_url')->nullable();
             $table->text('new_url')->nullable();
-            $table->text('note');
+            $table->text('note')->nullable();
             $table->timestamps();
         });
     }
