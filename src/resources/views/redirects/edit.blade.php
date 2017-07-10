@@ -9,7 +9,7 @@
 
                 <div class="panel-body">
                     <div class="panel-body">
-                    <form method="post" action="{{ action('\MalcolmKnott\Redirector\RedirectController@update', $redirect->id) }}">
+                    <form method="post" action="{{ action('\Malcolmknott\Redirector\RedirectController@update', $redirect->id) }}">
                         {{ csrf_field() }}
                         {{ method_field('PATCH') }}
                         @include('redirector::redirects.form', ['submit_button_text' => 'Update', 'is_update' => true])

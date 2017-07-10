@@ -8,7 +8,7 @@
                 <div class="panel-heading">Redirects Module - Create New Redirect</div>
 
                 <div class="panel-body">
-                	<form method="post" action="{{ action('\MalcolmKnott\Redirector\RedirectController@store') }}">
+                	<form method="post" action="{{ action('\Malcolmknott\Redirector\RedirectController@store') }}">
 						{{ csrf_field() }}
                     	@include('redirector::redirects.form', ['submit_button_text' => 'Save', 'is_update' => false])
                 	</form>

@@ -48,7 +48,7 @@ Update the "laravel-missing-page-redirector.php" config file with the database r
 Add a route that points to the Redirector Controller, you'll probably want to add some middleware to restrict who can edit your redirects.
 
 ```php
-Route::resource('redirects', '\Malcolmknott\Displaylog\DisplayLogController');
+Route::resource('redirects', '\Malcolmknott\Redirector\RedirectController');
 ```
 
 ## Views

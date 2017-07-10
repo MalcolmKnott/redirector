@@ -55,4 +55,4 @@
 
 
 <button type="submit" class="btn btn-success">{{ $submit_button_text }}</button>
-<a href="{{ action('\MalcolmKnott\Redirector\RedirectController@index') }}" class="btn btn-default">Cancel</a>
+<a href="{{ action('\Malcolmknott\Redirector\RedirectController@index') }}" class="btn btn-default">Cancel</a>

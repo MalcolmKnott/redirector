@@ -7,7 +7,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading clearfix">
                     <p class="pull-left">Redirects Module</p>
-                    <a href="{{ action('\MalcolmKnott\Redirector\RedirectController@create') }}" class="pull-right btn btn-primary">
+                    <a href="{{ action('\Malcolmknott\Redirector\RedirectController@create') }}" class="pull-right btn btn-primary">
                         Add Redirect
                     </a>
                 </div>
@@ -35,7 +35,7 @@
                                             {{ $redirect->new_url }}
                                         </td>
                                         <td>
-                                            <a href="{{ action('\MalcolmKnott\Redirector\RedirectController@edit', $redirect->id) }}"
+                                            <a href="{{ action('\Malcolmknott\Redirector\RedirectController@edit', $redirect->id) }}"
                                                 class="btn btn-primary"
                                             >
                                                 Edit
@@ -43,7 +43,7 @@
                                         </td>
                                         <td>
                                             <form method="post"
-                                                action="{{ action('\MalcolmKnott\Redirector\RedirectController@destroy', $redirect->id) }}">
+                                                action="{{ action('\Malcolmknott\Redirector\RedirectController@destroy', $redirect->id) }}">
                                                 {{ csrf_field() }}
                                                 {{ method_field('DELETE') }}
                                                 <button type="submit" class="btn btn-danger">
@@ -58,7 +58,7 @@
 
                     @else
                         <p class="alert alert-info">
-                            No redirects, <a href="{{ action('\MalcolmKnott\Redirector\RedirectController@create') }}">add first redirect</a>
+                            No redirects, <a href="{{ action('\Malcolmknott\Redirector\RedirectController@create') }}">add first redirect</a>
                         </p>
                     @endif
 
